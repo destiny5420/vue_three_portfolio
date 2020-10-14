@@ -1,0 +1,17 @@
+@import '../../common/style/globalstyle';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  // @include border();
+}
+
+.main-view {
+  @include size(100%, 100vh);
+  position: relative;
+}
