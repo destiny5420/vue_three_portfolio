@@ -27,6 +27,15 @@ export default {
     };
   },
   methods: {
+    onPushHandler: function(nextName) {
+      if (this.$route.name === nextName) {
+        return;
+      }
+
+      this.$router.push({
+        name: `${nextName}`,
+      });
+    },
     onLinkedIn: function() {
       console.log('-- onLinkedIn --');
       window.open('https://www.linkedin.com/in/%E5%8A%9B%E7%B6%AD-%E8%95%AD-b06a09ba/');

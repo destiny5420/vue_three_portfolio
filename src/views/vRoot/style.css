@@ -1,3 +1,7 @@
+.cursor {
+  cursor: pointer;
+}
+
 html,
 body {
   margin: 0;

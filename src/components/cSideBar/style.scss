@@ -24,7 +24,6 @@
     position: relative;
     overflow: hidden;
     margin-top: 70px;
-    cursor: pointer;
     text-align: center;
     transform: rotateZ(270deg);
     font-size: 1.25rem;
@@ -54,7 +53,6 @@
 
 .social-group {
   .social-icon {
-    cursor: pointer;
     font-size: 30px;
     color: rgb(104, 104, 104);
     transition: all 0.15s linear;
