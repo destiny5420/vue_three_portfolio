@@ -8,10 +8,10 @@ body {
 }
 
 * {
-  // @include border();
+  @include border();
 }
 
 .main-view {
-  @include size(100%, 100vh);
+  @include size(100%, auto);
   position: relative;
 }

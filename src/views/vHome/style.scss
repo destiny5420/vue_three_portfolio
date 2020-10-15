@@ -1,0 +1,28 @@
+@import '../../common/style/globalstyle';
+
+.main-view {
+  width: 100%;
+  height: 200vh;
+  position: relative;
+}
+
+.mouse-tip {
+  @include size(50px, 50px);
+  position: fixed;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+
+  svg {
+    .cls-1 {
+      fill: #fff;
+    }
+
+    #mouse-wheel {
+      fill: none;
+      stroke: #000;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+  }
+}

@@ -10,7 +10,6 @@ import store from './store';
 
 library.add(faLinkedin, faGithubSquare, faEnvelope, faTimes);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
-
 Vue.config.productionTip = false;
 
 new Vue({
