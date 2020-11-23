@@ -1,0 +1,5 @@
+@import '../../common/style/globalstyle';
+
+.main-view {
+  @include size(100%, 100vh);
+}
