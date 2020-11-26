@@ -4,6 +4,33 @@
   width: 100%;
   height: 200vh;
   position: relative;
+
+  .slogan {
+    @include size(50%, 50vh);
+    transform: translate(50%, 50%);
+
+    #name {
+      font-size: 2rem;
+      display: inline-block;
+      margin: 0px auto;
+    }
+
+    #position-block {
+      @include flex-layout(row, center, center);
+
+      p {
+        display: inline-block;
+        margin: 0px 0px;
+        font-size: 7.5rem;
+      }
+
+      > div {
+        @include dash-line(2px);
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 .mouse-tip {

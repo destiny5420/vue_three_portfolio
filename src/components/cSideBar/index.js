@@ -1,7 +1,9 @@
+import cSideBarCategoryButton from '@/components/cSideBarCategoryButton/index.vue';
+
 export default {
   name: 'cSideBar',
   props: {},
-  components: {},
+  components: { cSideBarCategoryButton },
   data: function() {
     return {
       socialData: [
@@ -24,6 +26,9 @@ export default {
           },
         },
       ],
+      categoryData: {
+        names: ['Contact', 'About', 'Articles', 'Projects'],
+      },
     };
   },
   methods: {

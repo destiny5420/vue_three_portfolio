@@ -111,6 +111,11 @@ $zIndex_loading: 2000;
   z-index: 1;
 }
 
+@mixin dash-line($width: 2px, $color: black) {
+  @include size(100%, $width);
+  background-color: $color;
+}
+
 .cursor {
   cursor: pointer;
 }

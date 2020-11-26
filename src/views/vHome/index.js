@@ -12,6 +12,10 @@ export default {
         scrollMouse: null,
         hideMouseTip: null,
       },
+      sloganData: {
+        name: 'PAPER HSIAO',
+        position: 'Designer',
+      },
     };
   },
   methods: {
@@ -39,22 +43,21 @@ export default {
   },
   computed: {},
   watch: {
-    scrollY: {
-      handler(newValue, oldValue) {
-        console.log('new Value: ', newValue, ' / oldValue: ', oldValue);
-        const vm = this;
-        if (newValue !== 0 && vm.hideMouseTip === false) {
-          vm.hideMouseTip = true;
-          vm.anim.hideMouseTip.play();
-
-          console.log('yes -1');
-        } else if (newValue === 0 && vm.hideMouseTip === true) {
-          console.log('cancel -2');
-          vm.hideMouseTip = false;
-          vm.anim.hideMouseTip.reverse();
-        }
-      },
-    },
+    // scrollY: {
+    //   handler(newValue, oldValue) {
+    //     console.log('new Value: ', newValue, ' / oldValue: ', oldValue);
+    //     const vm = this;
+    //     if (newValue !== 0 && vm.hideMouseTip === false) {
+    //       vm.hideMouseTip = true;
+    //       vm.anim.hideMouseTip.play();
+    //       console.log('yes -1');
+    //     } else if (newValue === 0 && vm.hideMouseTip === true) {
+    //       console.log('cancel -2');
+    //       vm.hideMouseTip = false;
+    //       vm.anim.hideMouseTip.reverse();
+    //     }
+    //   },
+    // },
   },
   // life cycle
   beforeCreate: function() {},

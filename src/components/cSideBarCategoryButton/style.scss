@@ -1,0 +1,26 @@
+#category-button {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25rem;
+
+  &::after {
+    $line-height: 4px;
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: $line-height;
+    z-index: 500;
+    background-color: black;
+    right: 0;
+    left: auto;
+    bottom: calc(50% - (#{$line-height} / 2));
+    transition: 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}

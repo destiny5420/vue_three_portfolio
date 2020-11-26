@@ -8,6 +8,49 @@
   position: relative;
 }
 
+.main-view .slogan {
+  width: 50%;
+  height: 50vh;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.main-view .slogan #name {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.main-view .slogan #position-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-view .slogan #position-block p {
+  display: inline-block;
+  margin: 0px 0px;
+  font-size: 7.5rem;
+}
+
+.main-view .slogan #position-block > div {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 15px;
+}
+
 .mouse-tip {
   width: 50px;
   height: 50px;

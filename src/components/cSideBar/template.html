@@ -1,4 +1,4 @@
-<div class="main-view">
+<div id="main-view">
   <div>
     <div class="logo cursor" @click="onPushHandler('Home')">
       <svg viewBox="0 0 68 68">
@@ -12,9 +12,7 @@
       </svg>
     </div>
     <div class="category-group">
-      <div class="category cursor" @click="onPushHandler('Contact')">
-        Contact
-      </div>
+      <cSideBarCategoryButton v-for="(item, index) in categoryData.names" :key="index" :prop_display_name="item" :prop_link_name="item"/>
     </div>
   </div>
   <div class="social-group">
@@ -22,5 +20,4 @@
       <font-awesome-icon class="social-icon cursor" :icon="item.icon" @click="item.methodName"/>
     </div>
   </div>
-  
 </div>

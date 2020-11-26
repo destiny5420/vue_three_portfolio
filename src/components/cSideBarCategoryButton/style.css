@@ -1,0 +1,25 @@
+#category-button {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25rem;
+}
+
+#category-button::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 4px;
+  z-index: 500;
+  background-color: black;
+  right: 0;
+  left: auto;
+  bottom: calc(50% - (4px / 2));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#category-button:hover::after {
+  left: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
