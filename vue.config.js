@@ -1,5 +1,16 @@
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  chainWebpack: (config) => {
+    config.resolve.alias
+      .set('@', resolve('./src'))
+      .set('@test', resolve('./src/tests'))
+      .set('@components', resolve('./src/components'));
+  },
   outputDir: 'docs',
   pages: {
     index: {
