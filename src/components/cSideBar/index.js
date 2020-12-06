@@ -1,4 +1,4 @@
-import cSideBarCategoryButton from '@/components/cSideBarCategoryButton/index.vue';
+import cSideBarCategoryButton from '@components/cSideBarCategoryButton/index.vue';
 
 export default {
   name: 'cSideBar',

@@ -9,7 +9,9 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('./src'))
       .set('@test', resolve('./src/tests'))
-      .set('@components', resolve('./src/components'));
+      .set('@common', resolve('./src/common'))
+      .set('@components', resolve('./src/components'))
+      .set('@views', resolve('./src/views'));
   },
   outputDir: 'docs',
   pages: {

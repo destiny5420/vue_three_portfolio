@@ -1,4 +1,4 @@
-import cSideBar from '@/components/cSideBar/index.vue';
+import cSideBar from '@components/cSideBar/index.vue';
 
 export default {
   name: 'vRoot',
