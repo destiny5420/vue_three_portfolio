@@ -1,3 +1,17 @@
 <div class="main-view">
-  This is contact view.
+  <form class="contact-form">
+    <h1 class="contact__title">Say Hello</h1>
+    <div class="under_score"></div>
+    <div class="contact__input">
+      <label class="input__label" for="input-3">{{ inputData.email.title }}</label>
+      <input type="email" class="input__element" />
+    </div>
+    <div class="contact__input">
+      <label class="input__label" for="input-3">{{ inputData.message.title }}</label>
+      <textarea type="text" rows="1" class="input__element" />
+    </div>
+    <button class="contact__button cursor" type="submit">
+      <span> Send Message </span>
+    </button>
+  </form>
 </div>

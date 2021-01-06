@@ -33,12 +33,7 @@ export default {
     onMouseTipHideAnim: function() {
       const vm = this;
       vm.anim.hideMouseTip = gsap.timeline();
-      vm.anim.hideMouseTip
-        .to('.mouse-tip', {
-          duration: 0.5,
-          opacity: 0.5,
-        })
-        .pause();
+      vm.anim.hideMouseTip.to('.mouse-tip', { duration: 0.5, opacity: 0.5 }).pause();
     },
   },
   computed: {},

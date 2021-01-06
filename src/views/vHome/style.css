@@ -3,9 +3,19 @@
 }
 
 .main-view {
+  position: relative;
   width: 100%;
   height: 200vh;
-  position: relative;
+}
+
+.main-view #slogan-wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-view #project-wrap {
+  width: 100%;
+  height: 100vh;
 }
 
 .main-view .slogan {
@@ -16,9 +26,9 @@
 }
 
 .main-view .slogan #name {
-  font-size: 2rem;
   display: inline-block;
-  margin: 0px auto;
+  margin: 0 auto;
+  font-size: 2rem;
 }
 
 .main-view .slogan #position-block {
@@ -39,7 +49,7 @@
 
 .main-view .slogan #position-block p {
   display: inline-block;
-  margin: 0px 0px;
+  margin: 0;
   font-size: 7.5rem;
 }
 
@@ -55,8 +65,8 @@
   width: 50px;
   height: 50px;
   position: fixed;
-  left: 50%;
   bottom: 35px;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }

@@ -106,13 +106,14 @@ $zIndex_loading: 2000;
 
 @mixin independent($color: rgb(248, 130, 130)) {
   position: absolute;
-  content: '';
-  background-color: $color;
   z-index: 1;
+  background-color: $color;
+  content: '';
 }
 
 @mixin dash-line($width: 2px, $color: black) {
   @include size(100%, $width);
+
   background-color: $color;
 }
 

@@ -3,7 +3,18 @@ export default {
   props: {},
   components: {},
   data: function() {
-    return {};
+    return {
+      inputData: {
+        email: {
+          title: 'Your Email',
+          context: '',
+        },
+        message: {
+          title: 'Message',
+          context: '',
+        },
+      },
+    };
   },
   methods: {},
   computed: {},
